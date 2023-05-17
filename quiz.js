@@ -84,7 +84,7 @@ function init(){
             })
         )
     }
-    if (localStorage.getItem("questions")){
+    if (localStorage.getItem("questions")=="null"){
         localStorage.setItem("questions",JSON.stringify(
             {
                 "data":[
