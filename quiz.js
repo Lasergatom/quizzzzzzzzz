@@ -84,19 +84,21 @@ function init(){
             })
         )
     }
-    localStorage.setItem("questions",JSON.stringify(
-        {
-            "data":[
-                {"qnum":1,"title":"How do you do outputs in Python?","qimg":"imgs/pythonlogo.png","options":["console.log","printf","cout","print"],"ans":"D"},
-                {"qnum":2,"title":"Which programming language is used in Unity?","qimg":"imgs/unitylogo.png","options":["C++","Assembly","C#","Golang"],"ans":"C"},
-                {"qnum":3,"title":"Which Launguage is the most popular?","qimg":"imgs/launguages.png","options":["Python","Java","Javascript","Brainfk"],"ans":"A"},
-                {"qnum":4,"title":"what does ++ in javascript mean?","qimg":"imgs/jslogo.png","options":["minus by 1","duplicate","add by 1","add by 2"],"ans":"C"},
-                {"qnum":5,"title":"Which js framework as made by meta?","qimg":"imgs/metalogo.png","options":["Vue","React","Angular","node.js"],"ans":"B"},
-                {"qnum":6,"title":"Which python framework was made by google?","qimg":"imgs/googlelogo.png","options":["Pytorch","Scikit-learn","Tensor Flow","Django"],"ans":"C"},
-                {"qnum":7,"title":"which is not an OOP launguage?","qimg":"imgs/OOP.png","options":["C","C++","C#","Java"],"ans":"A"}
-            ]
-        })
-    )
+    if (localStorage.getItem("questions")==null){
+        localStorage.setItem("questions",JSON.stringify(
+            {
+                "data":[
+                    {"qnum":1,"title":"How do you do outputs in Python?","qimg":"imgs/pythonlogo.png","options":["console.log","printf","cout","print"],"ans":"D"},
+                    {"qnum":2,"title":"Which programming language is used in Unity?","qimg":"imgs/unitylogo.png","options":["C++","Assembly","C#","Golang"],"ans":"C"},
+                    {"qnum":3,"title":"Which Launguage is the most popular?","qimg":"imgs/launguages.png","options":["Python","Java","Javascript","Brainfk"],"ans":"A"},
+                    {"qnum":4,"title":"what does ++ in javascript mean?","qimg":"imgs/jslogo.png","options":["minus by 1","duplicate","add by 1","add by 2"],"ans":"C"},
+                    {"qnum":5,"title":"Which js framework as made by meta?","qimg":"imgs/metalogo.png","options":["Vue","React","Angular","node.js"],"ans":"B"},
+                    {"qnum":6,"title":"Which python framework was made by google?","qimg":"imgs/googlelogo.png","options":["Pytorch","Scikit-learn","Tensor Flow","Django"],"ans":"C"},
+                    {"qnum":7,"title":"which is not an OOP launguage?","qimg":"imgs/OOP.png","options":["C","C++","C#","Java"],"ans":"A"}
+                ]
+            })
+        )
+    }
     $("options").style.display="none"
     $("qimg").style.display="none"
     $("leaderboard").style.display="none"
