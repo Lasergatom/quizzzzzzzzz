@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="nameverify.js"></script>
+        <link href="titlescreen.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="settingscontainer">Settings:<br>
+        <button onclick="annoy()" id="soundswitch" class="sb">Sound: OFF</button><br>
+        <button onclick="dark()" id="darkswitch" class="sb">Dark Mode: OFF</button></div>
+        <div id="title">PROGRAMMING QUIZ</div>
+        <div id="namecontainer"><label for="name" id="namelabel">What is your name?</label>
+        <input type="text" id="name" name="name"></div>
+        <button id="play" onclick="verify()">Play!</button>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="quiz.js"></script>
+        <link href="quiz.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body onload="init()">
+        <div id="topdisp">
+            Topic: Programming Quiz
+            <span id="scorecontainer">
+                <div id="name">Name: Annonymous</div>
+                <div id="score">Score: 0</div>
+            </span>
+            <div class="container">
+                <span class="text">Time</span>
+                <div class="circular-progress">
+                    <span class="progress-value">15</span>
+                </div>
+            </div>            
+        </div>
+        <div id="pi">-/-</div>
+        <h1 id="question">Rules:</h1>
+        <table id="leaderboard">
+            <tr id="firstrow">
+                <th class="rankdisp">Rank</th>
+                <th class="namedisp">Name</th>
+                <th class="scoredisp">Score</th>
+            </tr>
+        </table>
+        <div id="pie"></div>
+        <div id="piepercentage"></div>
+        <span style='font-size:30px;' id="rules"><ol style='list-style-type:none'>
+        <li>1. Pick the best option out of 4 answers</li>
+        <li>2. You have 15 seconds for each question</li>
+        <li>3. The faster you answer, the more points you recieve</li>
+        <li>4. Have Fun!</li>
+        </ol></span>
+        <button id="start" onclick="start()">Begin</button>
+        <img id="qimg">
+        <table id="options">
+            <tr>
+            <td><button class="option" id="A" onclick="submit(id)">Chadir</button></td>
+            <td><button class="option" id="B" onclick="submit(id)">Table</button></td>
+            </tr>
+            <tr>
+            <td><button class="option" id="C" onclick="submit(id)">Jack Jack</button></td>
+            <td><button class="option" id="D" onclick="submit(id)">Ricky Chan</button></td>
+            </tr>
+        </table>
+        <button id="next" onclick="load()">Next</button>
+    </body>
+</html>

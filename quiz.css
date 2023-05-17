@@ -1,0 +1,192 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    margin:0;
+}
+#question{
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+}
+#topdisp{
+    background-color: rgb(86, 0, 166);
+    width:100%;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    justify-content: space-around;
+    color: white;
+}
+#scorecontainer{
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+}
+#score{
+    font-size: 35px;
+}
+#quizname{
+    font-size: 50px;
+    color: white;
+}
+#leaderboard{
+    margin-bottom: 10px;
+}
+#firstrow{
+    background-color: lightblue;
+}
+#leaderboard,.namedisp,.rankdisp,.scoredisp{
+    margin-left: auto;
+    margin-right: auto;
+    border:0px;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 30px;
+}
+.namedisp,.rankdisp,.scoredisp{
+    width:300px;
+}
+#pie {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    background: conic-gradient(green 360deg, red 0deg);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: none;
+}
+#piepercentage{
+    text-align: center;
+    font-size:40px;
+    margin-bottom: 20px;
+    display: none;
+}
+#pi{
+    font-size:35px;
+    width:150px;
+    margin-left: 15px;
+    text-align: center;
+    background-color: rgb(148, 118, 210);
+    border: 1px solid darkorchid;
+    color:#fdfdfd;
+}
+#qimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#options{
+    margin-left: auto;
+    margin-right: auto;
+}
+.option{
+    width: 500px;
+    height: 100px;
+    border:0px;
+    font-size: 50px;
+    color: white;
+}
+#A{
+    background-color: rgb(219, 34, 34);
+}
+#B{
+    background-color: rgb(49, 125, 232);
+}
+#C{
+    background-color: rgb(213, 174, 1);
+}
+#D{
+    background-color: rgb(10, 163, 10);
+}
+#A:hover{
+    background-color: rgb(255, 106, 106);
+}
+#B:hover{
+    background-color: rgb(125, 179, 255);
+}
+#C:hover{
+    background-color: rgb(234, 206, 81);
+}
+#D:hover{
+    background-color: rgb(75, 223, 75);
+}
+#next{
+    width: 250px;
+    height: 75px;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    color: white;
+    background-color: rgb(86, 0, 166);
+    border: 0;
+    border-radius: 25px;
+    text-align: center;
+}
+#start{
+    width: 250px;
+    height: 75px;
+    display: block;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    color: white;
+    background-color: rgb(86, 0, 166);
+    border: 0;
+    border-radius: 25px;
+}
+#rules{
+    font-size:30px;
+    text-align:center;
+}
+/*circle code*/
+.container{
+    display:inline-flex;
+    width: 100px;
+    padding: 10px 0;
+    border-radius: 8px;
+    background: #fff;
+    row-gap: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+.circular-progress{
+    position: relative;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background: conic-gradient(#3ae82a 360deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.progress-value{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+}
+.text{
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+}
